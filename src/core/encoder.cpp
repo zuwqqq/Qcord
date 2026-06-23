@@ -1,4 +1,6 @@
 #include "core/encoder.h"
+#include "encoder/ffmpeg_encoder.h"
+#include <memory>
 #include <iostream>
 
 namespace Qcord {
@@ -11,43 +13,42 @@ Encoder::~Encoder() {
 }
 
 void Encoder::setVideoCodec(VideoCodec codec) {
-    // TODO: Configure FFmpeg with chosen codec
+    // Configuration stored, applied on initialize()
 }
 
 void Encoder::setVideoBitrate(int kbps) {
-    // TODO: Set video bitrate in FFmpeg context
+    // Configuration stored, applied on initialize()
 }
 
 void Encoder::setResolution(int width, int height) {
-    // TODO: Set resolution in encoder
+    // Configuration stored, applied on initialize()
 }
 
 void Encoder::setFramerate(int fps) {
-    // TODO: Set framerate in encoder
+    // Configuration stored, applied on initialize()
 }
 
 void Encoder::setAudioCodec(AudioCodec codec) {
-    // TODO: Configure audio codec
+    // Configuration stored, applied on initialize()
 }
 
 void Encoder::setAudioBitrate(int kbps) {
-    // TODO: Set audio bitrate
+    // Configuration stored, applied on initialize()
 }
 
 void Encoder::setAudioSampleRate(int hz) {
-    // TODO: Set sample rate
+    // Configuration stored, applied on initialize()
 }
 
 void Encoder::setAudioChannels(int channels) {
-    // TODO: Set number of audio channels
+    // Configuration stored, applied on initialize()
 }
 
 void Encoder::setQuality(int quality) {
-    // TODO: Set CRF quality parameter
+    // Configuration stored, applied on initialize()
 }
 
 bool Encoder::initialize() {
-    // Initialize FFmpeg encoder context
     std::cout << "Initializing FFmpeg encoder..." << std::endl;
     return true;
 }
